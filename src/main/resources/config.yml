@@ -1,0 +1,30 @@
+# This is the chatchannels configuration file.
+# Most options will have a short comment above them explaining what they do.
+# Feel free to create your own comments using the '#' character. Comments don't affect the plugin behaviour.
+# Please make sure to use spaces as indentation instead of tabs.
+# Don't remove any keys as the plugin does not have automatic fallbacks for missing keys.
+# Thank you for choosing chatchannels!
+
+# This is the default renderer for all channels without a custom renderer.
+# It may be omitted if all channels use a custom renderer.
+# Messages are formatted using MiniMessage (https://docs.advntr.dev/minimessage/index.html)
+# The following custom placeholders are available:
+# <source_display_name> - The display name of the player who sent the message.
+# <channel_name> - The display name of the channel.
+# <message> - The message sent by the player.
+channel-renderer: '<source_display_name> in <gold>[</gold><channel_name><gold>]</gold>: <message>'
+# This section is for configuring the channels.
+channels:
+  # This is the key for the channel. It is used to identify the channel in commands.
+  admin:
+    # This is the display name. It is shown in the channel list and may be used as a parameter in a channel renderer.
+    # The key is also used to generate the permission to join the channel (chatchannels.join.<key>) and automatically join the channel on login (chatchannels.autojoin.<key>).
+    display-name: '<red>Admin</red>'
+  dev:
+    display-name: '<blue>Dev</blue>'
+  mod:
+    display-name: '<aqua>Mod</aqua>'
+  chatmod:
+    display-name: '<yellow>Chat-Mod</yellow>'
+    # This is the custom renderer for this channel.
+    channel-renderer: '<source_display_name> in <gray>[</gray><channel_name><gray>]</gray>: <message>'
