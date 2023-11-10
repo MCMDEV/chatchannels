@@ -1,5 +1,5 @@
 object Deps {
-    val projectVersion = "1.0"
+    val projectVersion = "1.1"
 
     object Plugins {
         const val paperweightVersion = "1.5.5"

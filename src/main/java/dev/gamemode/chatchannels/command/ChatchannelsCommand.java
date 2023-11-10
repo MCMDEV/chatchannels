@@ -74,8 +74,8 @@ public class ChatchannelsCommand extends BukkitCommand {
 
   @NotNull
   private TextComponent buildActive(Channel channel) {
-    return Component.text("[Active]", NamedTextColor.GOLD)
-        .hoverEvent(HoverEvent.showText(Component.text("Click to activate channel.")))
-        .clickEvent(ClickEvent.runCommand("/activechannel " + channel.getName()));
+    return Component.text("[Switch]", NamedTextColor.GOLD)
+        .hoverEvent(HoverEvent.showText(Component.text("Click to switch channel.")))
+        .clickEvent(ClickEvent.runCommand("/switchchannel " + channel.getName()));
   }
 }
